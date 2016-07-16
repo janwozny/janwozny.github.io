@@ -1,0 +1,295 @@
+.card {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+    background-color: #f1f1f1;
+}
+
+.half-card {
+    float: left;
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+
+.card-intro {
+    background-color: $subdued-brand-color;
+    padding: 24px 12px;
+    text-align: center;
+    border-bottom: 2px solid $brand-color;
+    margin-bottom: $spacing-unit;
+
+    h2.section-title {
+        margin-bottom: 0;
+        color: $gray-color-light;
+    }
+}
+
+.half-card:last-child {
+    margin-left: $spacing-unit;
+}
+
+.column-right {
+    margin-left: $spacing-unit;
+
+    .card {
+        margin-bottom: $spacing-unit;
+    }
+
+    .half-card:last-child {
+        margin-left: none;
+    }
+}
+
+.column-left .card {
+    margin-bottom: $spacing-unit;
+}
+
+.full-card {
+    width: 100%;
+    margin-bottom: $spacing-unit;
+}
+
+.full-card-info {
+    width: 54%;
+    float: left;
+    padding: 4%;
+
+    .experience-info {
+        color: $gray-color;
+        font-style: italic;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.experience-info-minor {
+    font-size: 1.2em;
+    padding: 12px 0;
+    text-align: center;
+
+    &:last-child {
+        margin-bottom: 36px;
+    }
+}
+
+.full-card .card-intro {
+    width: 34%;
+    float: left;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-right: 2px solid $brand-color;
+    height: 200px;
+    padding-top: 100px;
+}
+
+.half-card .experience-info {
+    text-align: center;
+}
+
+
+/**
+ *  Block Sizing
+ */
+
+
+@include media-query($on-laptop) {
+
+}
+
+@include media-query($on-palm) {
+    .half-card,
+    .one-third-card,
+    .two-third-card {
+        float: none;
+        width: 100%;
+    }
+
+    .half-card:last-child,
+    .one-third-card:last-child,
+    .two-third-card:last-child {
+        margin-left: 0;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1.site-title {
+        font-size: 1.6em;
+    }
+
+    .full-card-info {
+        width: 54%;
+        float: left;
+        padding: 4%;
+    }
+}
+
+
+
+
+/**
+ * Site header
+ */
+.site-header {
+}
+
+.header-bg-top {
+    background-color: $subdued-brand-color;
+    height: 200px;
+}
+
+.intro-card-wrapper {
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.intro-card-left {
+    text-align: right;
+    width: 60%;
+    float: left;
+    padding: 4%;
+}
+
+ul.certification-titles, 
+ul.intro-info {
+    list-style-type: none;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+ul.certification-titles {
+    color: $gray-color;
+    font-style: italic;
+}
+
+.intro-card-line {
+    border-top: 1px solid $gray-color;
+    border-bottom: none;
+    margin: 16px 0;
+}
+
+.intro-info {
+    font-size: 1.2em;
+}
+
+.intro-card-right {
+    width: 32%;
+    float: right;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.intro-card-bottom {
+    background-color: $brand-color;
+    width: 100%;
+    clear: both;
+}
+
+.site-title {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.site-description {
+    color: $gray-color;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    text-align: center;
+    background-color: $subdued-brand-color;
+    padding: 12px 0 0 0;
+    margin-top: $spacing-unit;
+    color: $gray-color-light;
+}
+
+
+
+
+/**
+ *  Typography
+ */
+
+h2.section-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.big-spacing {
+    margin: 140px 0 60px 0;
+}
+
+.quote-name {
+
+}
+
+.intro-statement {
+    color: $gray-color;
+    font-size: 1.4em;
+    padding: 24px 20%;
+    margin: $spacing-unit auto;
+}
+
+
+.card-intro .experience-info {
+    color: darken($gray-color-light, 12%);
+}
+
+
+
+
+
+a.button {
+    background-color: $brand-color;
+    color: #ffffff;
+    padding: 12px 20px;
+    display: block;
+    width: 140px;
+    margin: 12px auto 100px auto;
+    text-align: center;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $subdued-brand-color;
+    }
+}
+
+ul.card-list {
+    margin: 0;
+    padding: 0 32px $spacing-unit 32px;
+    list-style-type: square;
+    list-style-position: inside;
+
+    li {
+        margin-bottom: 24px;
+    }
+
+    ul {
+        list-style-type: disc;
+        font-style: italic;
+    }
+}
+
+
+
+.clearfix {
+    clear: both;
+}
