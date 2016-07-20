@@ -81,7 +81,8 @@ blockquote {
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
   font-size: 1.4em;
-  font-style: italic; }
+  font-style: italic;
+  margin-bottom: 60px; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
@@ -220,7 +221,7 @@ ul.social-icons {
   margin-bottom: 0;
   border-bottom: none;
   border-right: 2px solid #a61f34;
-  height: 200px;
+  height: 240px;
   padding-top: 100px; }
 
 .half-card .experience-info {
@@ -229,7 +230,7 @@ ul.social-icons {
 /**
  *  Block Sizing
  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .half-card,
   .one-third-card,
   .two-third-card {
@@ -242,6 +243,7 @@ ul.social-icons {
     margin-left: 0; }
 
   .card {
+    float: none;
     margin: 0;
     padding: 0; }
 
@@ -249,9 +251,36 @@ ul.social-icons {
     font-size: 1.6em; }
 
   .full-card-info {
-    width: 54%;
-    float: left;
-    padding: 4%; } }
+    width: auto;
+    float: none;
+    padding: 4%; }
+
+  .column-right {
+    margin-left: 0; }
+
+  .full-card {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px; }
+
+  .full-card .card-intro {
+    float: none;
+    height: auto;
+    width: auto;
+    padding: 24px 12px;
+    text-align: center;
+    border-right: none;
+    border-bottom: 2px solid #a61f34;
+    margin-bottom: 30px; }
+    .full-card .card-intro h2.section-title {
+      margin-bottom: 0;
+      color: #e8e8e8; }
+
+  .certification-titles li {
+    font-size: 0.8em; }
+
+  .intro-info li {
+    font-size: 0.9em; } }
 /**
  * Site header
  */
@@ -290,11 +319,15 @@ ul.certification-titles {
 
 .intro-card-right {
   width: 32%;
-  float: right; }
-  .intro-card-right img {
-    width: 100%;
-    height: auto; }
+  float: right;
+  background-image: url("/img/jan.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 376px; }
 
+@media screen and (max-width: 680px) {
+  .intro-card-right {
+    height: 270px; } }
 .intro-card-bottom {
   background-color: #a61f34;
   width: 100%;

@@ -80,7 +80,7 @@
     margin-bottom: 0;
     border-bottom: none;
     border-right: 2px solid $brand-color;
-    height: 200px;
+    height: 240px;
     padding-top: 100px;
 }
 
@@ -113,6 +113,7 @@
     }
 
     .card {
+        float: none;
         margin: 0;
         padding: 0;
     }
@@ -122,10 +123,46 @@
     }
 
     .full-card-info {
-        width: 54%;
-        float: left;
+        width: auto;
+        float: none;
         padding: 4%;
     }
+
+    .column-right {
+    margin-left: 0;
+    }
+
+    .full-card {
+        width: 100%;
+        float: none;
+        margin-bottom: $spacing-unit;
+    }
+
+    .full-card .card-intro {
+        float: none;
+        height: auto;
+        width: auto;
+        padding: 24px 12px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid $brand-color;
+        margin-bottom: $spacing-unit;
+
+        h2.section-title {
+            margin-bottom: 0;
+            color: $gray-color-light;
+        }
+    }
+
+    .certification-titles li {
+        font-size: 0.8em;
+    }
+
+    .intro-info li {
+        font-size: 0.9em;
+    }
+
+    
 }
 
 
@@ -180,10 +217,15 @@ ul.certification-titles {
 .intro-card-right {
     width: 32%;
     float: right;
+    background-image: url('/img/jan.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 376px;
+}
 
-    img {
-        width: 100%;
-        height: auto;
+@include media-query($on-palm) {
+    .intro-card-right {
+        height: 270px;
     }
 }
 
