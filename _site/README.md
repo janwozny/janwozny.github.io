@@ -1,2 +1,0 @@
-# janwozny.github.io
-Website
