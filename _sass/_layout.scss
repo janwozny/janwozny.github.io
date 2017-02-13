@@ -25,6 +25,10 @@
     }
 }
 
+.card-bottom {
+    padding: 0 36px;
+}
+
 .half-card:last-child {
     margin-left: $spacing-unit;
 }
@@ -199,6 +203,13 @@ ul.intro-info {
     padding: 0;
 }
 
+ul.intro-info {
+    width: 50%;
+    float: left;
+}
+
+
+
 ul.certification-titles {
     color: $gray-color;
     font-style: italic;
@@ -344,4 +355,9 @@ ul.card-list {
     ul.intro-info li{
         font-size: 0.6em;
     }
+}
+
+.card-wrapper {
+    float: left;
+    margin-bottom: 30px;
 }
