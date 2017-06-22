@@ -1,0 +1,571 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+/*-----------------------------------*\
+
+  Grid
+
+\*-----------------------------------*/
+
+.clear {
+  clear:both;
+}
+
+.full-width {
+  width: 100%;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.columns-2 {
+  width: 47%;
+  margin-left: 2%;
+  float: left;
+}
+
+
+.columns-3 {
+  width: 30.667%;
+  float: left;
+  margin-left: 2%;
+}
+
+
+
+@media (max-width: 700px) {
+  .row {
+    width: 96%;
+    padding: 0 2%;
+    margin: 20px 0;
+  }
+
+  .columns-2 {
+    width: 100%;
+    margin-left: 0;
+    float: left;
+    margin-bottom: 40px;
+  }
+
+  .columns-3 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  
+}
+
+
+
+/*-----------------------------------*\
+
+  Typography
+
+\*-----------------------------------*/
+
+h2 {
+  font-size: 3em;
+  font-family: 'Spectral', serif;
+  color: #333;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+p {
+  margin: 12px 0;
+  line-height: 1.8;
+  font-size: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+
+
+ul li {
+  margin: 12px 0 12px 32px;
+  font-size: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+li:before {
+  content: "• ";
+  color: #ec1e27; /* or whatever color you prefer */
+}
+
+a.button {
+  text-decoration: none;
+  color: #ec1e27;
+  padding: 12px 24px;
+  border: 2px solid #ec1e27;
+  border-radius: 4px;
+}
+
+a.button:hover {
+  color: white;
+  background-color: #ec1e27;
+}
+
+.centered {
+  text-align: center;
+}
+
+a.about-button {
+  display: inline-block;
+}
+
+p.call-to-action {
+  margin-top: 40px;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #555;
+}
+
+
+
+
+/*-----------------------------------*\
+
+  Head
+
+\*-----------------------------------*/
+
+.head {
+  width: 100%;
+  background-image: url('../img/sabg-min.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+
+.swoop svg {
+
+  position: relative;
+  bottom: 120px;
+  left: -2px;
+
+}
+
+.swoop svg path {
+  max-width: 100%;
+  stroke: white;
+  fill: white;
+}
+
+.white-layer {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo svg {
+  margin-top: 60px;
+}
+
+.head p {
+  color: #333;
+}
+
+.head-by {
+  margin-top: 40px;
+  font-size: 1.4em;
+  font-style: italic;
+
+}
+
+.head-name {
+  font-size: 3em;
+  font-family: 'Spectral', serif;
+}
+
+@media (max-width: 699px)  {
+  .head {
+    height: 300px;
+  }
+
+  .swoop svg {
+    display: none;
+  }
+
+  .logo {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .head-name {
+    font-size: 2em;
+    font-family: 'Spectral', serif;
+  }
+}
+
+@media (min-width: 700px) {
+  .head {
+    height: 500px;
+  }
+
+  .logo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logo svg {
+    width: 100%;
+  }
+  
+}
+
+img {
+  max-width: 100%;
+}
+/*-----------------------------------*\
+
+  About
+
+\*-----------------------------------*/
+.about-sa {
+  margin: 120px auto 0;
+}
+
+.about-sa img {
+  text-align: center;
+  max-width: 100%;
+}
+
+
+
+
+
+/*-----------------------------------*\
+
+  Pics
+
+\*-----------------------------------*/
+.full-width-gray {
+  background: #333;
+  padding: 40px 0 100px 0;
+  margin-top: 120px;
+}
+
+.full-width-text {
+  padding: 0 120px;
+}
+
+p.testimonial-1,
+p.testimonial-1-name {
+  color: #ddd;
+  font-family:'Spectral', serif;
+}
+
+p.testimonial-1 {
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+p.testimonial-1-name {
+  margin-top: 32px;
+  font-size: 1.4em;
+  text-align: right;
+}
+
+.pics-sa {
+  margin-top: 120px;
+}
+
+.pics-sa img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+@media (max-width: 699px)  {
+  .full-width-text{
+    padding: 0 12px;
+  }
+}
+
+.sa-red {
+  color: #ec1e27;
+}
+
+/*-----------------------------------*\
+
+  Who Uses SA
+
+\*-----------------------------------*/
+
+.who-uses-sa {
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+
+/*-----------------------------------*\
+
+  Cost
+
+\*-----------------------------------*/
+.cost-sa {
+  background-color: #ccc;
+  padding: 80px 0;
+  margin-top: 120px;
+}
+
+.cost-box {
+  background-color: #333;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 8px 0 2px 0;
+}
+
+p.cost-intro {
+  padding: 20px 32px;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #888;
+}
+
+hr.cost-hr {
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+p.cost-number {
+  color: #fff;
+  font-size: 4em;
+  text-align: center;
+}
+
+p.cost-number span.cost-dollar-sign {
+  font-size: 24px;
+  vertical-align: 70%;
+}
+
+span.cost-each {
+  font-size: 24px;
+}
+
+.cost-order-info,
+.cost-order-phone {
+  text-align: center;
+  color: #fff;
+}
+
+.cost-order-info {
+  margin-top: 32px;
+  font-size: 1em;
+  color: #fff;
+}
+
+/*-----------------------------------*\
+
+  Bio
+
+\*-----------------------------------*/
+
+.bio-sa {
+  margin-top: 200px;
+}
+
+.bio-photo {
+  text-align: center;
+}
+
+.bio-photo img {
+  border-radius: 50%;
+  
+}
+
+.bio-text {
+  padding: 24px 10%;
+  background-color: #333;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 0 12%;
+
+}
+
+.bio-name {
+  padding: 4px;
+  margin: 40px 12% 0;
+  z-index: 999;
+  font-family: 'Spectral', serif;
+  font-size: 1.8em;
+  background-color: #111;
+  color: #eee;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+p.bio-story,
+p.bio-specialties {
+  font-size: 1em;
+  color: #ddd;
+}
+
+.bio-entry ul li {
+  font-size: 1em;
+  color: #ddd;
+}
+
+
+ul.links-list {
+  list-style-type: none;
+  margin: 12px auto;
+  padding: 0;
+  text-align: center;
+}
+
+ul.links-list li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul.links-list li a {
+  color: #ec1e27;
+}
+
+ul.links-list li:last-child {
+  margin-left: 24px;
+}
+
+ul.links-list li:before {
+  content: "";
+}
+
+@media (max-width: 800px) {
+  .bio-text {
+    margin: 0;
+  }
+
+  .bio-name {
+    margin: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  .bio-photo img {
+    max-width: 400px;
+    
+  }
+}
+
+@media (min-width: 700px) and (max-width: 849px) {
+  .bio-photo img {
+    max-width: 100%;
+    
+  }
+}
+
+@media (min-width: 500px) and (max-width: 699px) {
+  .bio-photo img {
+    max-width: 400px;
+  }
+}
+
+/*-----------------------------------*\
+
+  Footer
+
+\*-----------------------------------*/
+
+.footer {
+  height: 80px;
+  margin-top:120px;
+  background-color: #333;
+}
+
+.footer p {
+  margin-top: 20px;
+  color: #777;
+  text-align: center;
+}
+
+
+
+/*-----------------------------------*\
+
+  Mobile
+
+\*-----------------------------------*/
+@media (max-width: 699px) {
+  p, ul li {
+    font-size: 1em;
+  }
+
+  p.testimonial-1 {
+    font-size: 1.2em;
+  }
+
+  p.testimonial-1-name {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
